@@ -14,7 +14,7 @@ section {
 	padding: 10rem 0;
 }
 
-.sun{
+.sun { 
 	width: 300px;
 }
 
@@ -23,6 +23,24 @@ section {
 	background-size: cover;
 }
 
-.dipper{
+.dipper {
 	width: 200px;
+	opacity: 0;
+}
+
+.js-dipper-fade { 
+	/*Dont forget the other prefixes! */
+	-webkit-animation:dipper-fade 1s linear forwards;
+		/*animation-fill-mode: forwards;
+		will tell the animation to stay at its end state after complete */
+}
+
+/*Dont forget the other prefixes! */
+@-webkit-keyframes dipper-fade {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
 }
