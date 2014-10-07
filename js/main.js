@@ -1,7 +1,7 @@
 var $win = $(window);
 
 $win.on('scroll', function () {
- console.log('scrolling!');
+	var scrollPos = $win.scrollTop();
 
-	console.log ('scrollPos');
+	console.log (scrollPos);
 });	
