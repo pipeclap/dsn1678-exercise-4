@@ -47,6 +47,7 @@ section {
 
 .space-chip{
 	width: 300px;
+	opacity: 0;
 }
 
 .orange-section{ 
@@ -54,6 +55,22 @@ section {
 	background-color: #f6a500;
 }
 
+.js-shuttle-fade { 
+	/*Dont forget the other prefixes! */
+	-webkit-animation:shuttle-fade 1s linear forwards;
+		/*animation-fill-mode: forwards;
+		will tell the animation to stay at its end state after complete */
+}
+
+/*Dont forget the other prefixes! */
+@-webkit-keyframes shuttle-fade {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
 
 
 

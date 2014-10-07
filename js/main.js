@@ -18,4 +18,6 @@ $dipperSection.waypoint(function () {
 	$dipper.addClass('js-dipper-fade');
 }, { offset: '50%' });
 
-$
+$orangeSection.waypoint(function (){
+	$spaceShip. addClass('js-shuttle-fade');
+}, {offset: '50%' });
